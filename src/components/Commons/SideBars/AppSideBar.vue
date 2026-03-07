@@ -29,14 +29,7 @@ const items: MenuItem[] = [
         url: '/friends',
         icon: Inbox,
     },
-    {
-        title: 'タイムライン',
-        url: '/timeline',
-        icon: Calendar,
-    },
 ]
-
-const route = useRoute();
 </script>
 
 <template>
@@ -48,7 +41,7 @@ const route = useRoute();
                     <SidebarMenu>
                         <SidebarMenuItem v-for="item in items" :key="item.title">
                             <SidebarMenuButton as-child>
-                                <RouterLink :to="item.url" active-class="text-xl">
+                                <RouterLink :to="item.url" active-class="bg-black text-white">
                                     <component :is="item.icon" />
                                     <span>{{ item.title }}</span>
                                 </RouterLink>

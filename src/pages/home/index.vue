@@ -1,5 +1,11 @@
+<script setup lang="ts">
+import { SidebarTrigger } from '@/components/ui/sidebar';
+
+</script>
+
 <template>
-    <div class="home">
-        <h1 class="text-2xl">Home</h1>
+    <div class="flex items-center gap-2">
+        <SidebarTrigger />
+        <RouterLink to="/">ホーム</RouterLink>
     </div>
 </template>

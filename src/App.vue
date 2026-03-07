@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import AppSideBar from './components/Commons/SideBars/AppSideBar.vue';
-import { SidebarProvider, SidebarTrigger } from './components/ui/sidebar';
+import { SidebarProvider } from './components/ui/sidebar';
 
 </script>
 
 <template>
   <SidebarProvider>
     <AppSideBar />
-    <main class="px-4 w-full">
-      <SidebarTrigger />
+    <main class="p-4 w-full">
       <RouterView />
     </main>
   </SidebarProvider>
