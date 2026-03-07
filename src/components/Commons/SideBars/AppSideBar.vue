@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Calendar, Home, Inbox } from 'lucide-vue-next'
+import { Home, Inbox } from 'lucide-vue-next'
 import {
     Sidebar,
     SidebarContent,
@@ -10,7 +10,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from '@/components/ui/sidebar'
-import { RouterLink, useRoute } from 'vue-router';
+import { RouterLink } from 'vue-router';
 
 type MenuItem = {
     title: string
