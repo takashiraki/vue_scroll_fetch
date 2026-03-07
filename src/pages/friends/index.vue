@@ -1,5 +1,5 @@
 <template>
     <div class="home">
-        <h1 class="text-2xl">Home</h1>
+        <h1>友だち</h1>
     </div>
 </template>
