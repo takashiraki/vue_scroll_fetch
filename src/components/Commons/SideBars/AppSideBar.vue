@@ -47,9 +47,8 @@ const route = useRoute();
                 <SidebarGroupContent>
                     <SidebarMenu>
                         <SidebarMenuItem v-for="item in items" :key="item.title">
-                            <SidebarMenuButton as-child
-                                :is-active="route.path === item.url || (route.path.startsWith(item.url) && item.url !== '/')">
-                                <RouterLink :to="item.url">
+                            <SidebarMenuButton as-child>
+                                <RouterLink :to="item.url" active-class="text-xl">
                                     <component :is="item.icon" />
                                     <span>{{ item.title }}</span>
                                 </RouterLink>
