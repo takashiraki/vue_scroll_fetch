@@ -7,7 +7,7 @@ import { SidebarProvider } from './components/ui/sidebar';
 <template>
   <SidebarProvider>
     <AppSideBar />
-    <main class="p-4 w-full">
+    <main class="p-4 w-full bg-gray-100">
       <RouterView />
     </main>
   </SidebarProvider>

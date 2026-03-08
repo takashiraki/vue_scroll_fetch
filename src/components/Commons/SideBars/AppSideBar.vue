@@ -33,7 +33,7 @@ const items: MenuItem[] = [
 </script>
 
 <template>
-    <Sidebar class="border-none">
+    <Sidebar class="border-none bg-gray-100">
         <SidebarContent>
             <SidebarGroup>
                 <SidebarGroupLabel>アプリケーション</SidebarGroupLabel>
