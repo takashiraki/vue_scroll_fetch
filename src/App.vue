@@ -5,10 +5,12 @@ import { SidebarProvider } from './components/ui/sidebar';
 </script>
 
 <template>
-  <SidebarProvider>
+  <div class="bg-gray-100">
+    <SidebarProvider>
     <AppSideBar />
-    <main class="p-4 w-full bg-gray-100">
+    <main class="p-4 w-full">
       <RouterView />
     </main>
   </SidebarProvider>
+  </div>
 </template>
